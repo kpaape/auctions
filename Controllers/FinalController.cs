@@ -35,9 +35,12 @@ namespace FinalExam.Controllers
             {
                 if((int)(DateTime.Now - auction.created_at).TotalDays < 0)
                 {
-                    var bidder = dbContext.Users.FirstOrDefault(u => u.user_id == auction.highest_bidder_id);
-                    auction.creator.wallet += auction.highest_bid;
-                    bidder.wallet -= auction.highest_bid;
+                    if(auction.highest_bidder_id != 0)// Only if somebody has placed a bid, will it continue
+                    {
+                        var bidder = dbContext.Users.FirstOrDefault(u => u.user_id == auction.highest_bidder_id);
+                        auction.creator.wallet += auction.highest_bid;
+                        bidder.wallet -= auction.highest_bid;
+                    }
                     dbContext.Auctions.Remove(auction);
                     dbContext.SaveChanges();
                 }
@@ -73,6 +76,7 @@ namespace FinalExam.Controllers
                     return View("Index", "Logins");
                 }
                 NewAuction.user_id = (int)UserId;
+                NewAuction.highest_bid = NewAuction.starting_bid;// The platform does not mention having the starting bid override the highest bid to start
                 dbContext.Auctions.Add(NewAuction);
                 dbContext.SaveChanges();
                 return RedirectToAction("Index");
