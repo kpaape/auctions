@@ -4,10 +4,16 @@
 
 <p>Highest Bid: $@ViewBag.ViewAuction.highest_bid - By User: 
 @{
-    if(@ViewBag.HighestBidder != null)
+    string TopBidder = "";
+    if(ViewBag.HighestBidder != null)
     {
-        @ViewBag.HighestBidder.user_name
+        TopBidder = ViewBag.HighestBidder.user_name;
     }
+    else
+    {
+        TopBidder = "Starting Bid";
+    }
+    @TopBidder
 }
 </p>
 
