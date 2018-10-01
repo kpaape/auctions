@@ -1,0 +1,11 @@
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\bin\Debug\netcoreapp2.0\FinalExam.deps.json
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\bin\Debug\netcoreapp2.0\FinalExam.runtimeconfig.json
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\bin\Debug\netcoreapp2.0\FinalExam.runtimeconfig.dev.json
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\bin\Debug\netcoreapp2.0\FinalExam.dll
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\bin\Debug\netcoreapp2.0\FinalExam.pdb
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\obj\Debug\netcoreapp2.0\FinalExam.csprojResolveAssemblyReference.cache
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\obj\Debug\netcoreapp2.0\FinalExam.csproj.CoreCompileInputs.cache
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\obj\Debug\netcoreapp2.0\FinalExam.AssemblyInfoInputs.cache
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\obj\Debug\netcoreapp2.0\FinalExam.AssemblyInfo.cs
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\obj\Debug\netcoreapp2.0\FinalExam.dll
+C:\Users\kpaape\Desktop\DojoAssignments\NetCore\c_sharp_net_web\FinalExam\obj\Debug\netcoreapp2.0\FinalExam.pdb

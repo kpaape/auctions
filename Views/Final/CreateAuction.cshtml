@@ -1,0 +1,20 @@
+@model Auction
+<form asp-action="AddAuction" asp-controller="Final" method="POST">
+    <span asp-validation-for="product_name" class="form_errors"></span>
+    <label asp-for="product_name">Product Name:</label>
+    <input asp-for="product_name">
+
+    <span asp-validation-for="starting_bid" class="form_errors"></span>
+    <label asp-for="starting_bid">Starting Bid:</label>
+    <input asp-for="starting_bid">
+
+    <span asp-validation-for="product_description" class="form_errors"></span>
+    <label asp-for="product_description">Product Description:</label>
+    <input asp-for="product_description">
+    
+    <span asp-validation-for="end_date" class="form_errors"></span>
+    <label asp-for="end_date">End Date:</label>
+    <input asp-for="end_date" type="date">
+
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,33 @@
+@model IEnumerable<Auction>
+<a href="CreateAuction" class="button">Create Auction</a>
+<p>Your Balance: $@ViewBag.Wallet</p>
+<table>
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Seller</th>
+            <th>Top Bid</th>
+            <th>Time Remaining</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var auction in Model)
+    {
+        <tr>
+            <td><a href="ViewAuction/@auction.auction_id">@auction.product_name</a></td>
+            <td>@auction.creator.user_name</td>
+            <td>$@auction.highest_bid</td>
+            <td>@((int)(DateTime.Now - auction.created_at).TotalDays) Day(s)</td>
+            <td>
+            @{
+                if(ViewBag.UserId == auction.user_id)
+                {
+                    <a href="DeleteAuction/@auction.auction_id">Delete</a>
+                }
+            }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

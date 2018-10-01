@@ -1,0 +1,21 @@
+<h2>@ViewBag.ViewAuction.product_name</h2>
+<h3>Created by: @ViewBag.ViewAuction.creator.user_name</h3>
+<p>@ViewBag.ViewAuction.end_date</p>
+
+<p>Highest Bid: $@ViewBag.ViewAuction.highest_bid - By User: 
+@{
+    if(@ViewBag.HighestBidder != null)
+    {
+        @ViewBag.HighestBidder.user_name
+    }
+}
+</p>
+
+@model Bid
+<form asp-action="SubmitBid" asp-controller="Final" method="POST">
+    <span asp-validation-for="amount" class="form_errors"></span>
+    <label asp-for="amount">Amount:</label>
+    <input asp-for="amount">
+
+    <button type="submit">Bid</button>
+</form>
