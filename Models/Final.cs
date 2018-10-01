@@ -31,7 +31,7 @@ namespace FinalExam.Models
 
         public int user_id { get; set; }
         public User creator {get;set;}
-        public decimal highest_bid { get; set; }
+        public int highest_bid { get; set; }
         public int highest_bidder_id { get; set; }
 
         public DateTime created_at { get; set; } = DateTime.Now;

@@ -37,7 +37,7 @@ namespace FinalExam.Models
         [DataType(DataType.Password)]
         [Display(Name="Password")]
         public string password {get;set;}
-        public decimal wallet { get; set; } = 1000.00M;
+        public int wallet { get; set; } = 1000;
         List<Auction> auctions { get; set; }
 
         public DateTime created_at { get; set; } = DateTime.Now;
